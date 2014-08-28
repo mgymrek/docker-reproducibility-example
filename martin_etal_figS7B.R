@@ -9,7 +9,7 @@
 library(gplots)
 
 #this file has ase site calls from the exome data and has the correct individual IDs, has ref_ratios outside 0.4-0.6 removed, and has unique IDs for RSID
-ase <- read.csv('ase_total30_sample30.csv', header=T)
+ase <- read.csv('/home/guest/data/ase_total30_sample30.csv', header=T)
 
 #Filter all ASE sites: >= 30 reads, >=2% ref, >=2% nonref, p=0.05
 newsig_ase <- subset(ase, ase$sample30_p <= 0.05 & ase$ref_count >= .02 * ase$total_count & ase$nonref_count >= .02 * ase$total_count)

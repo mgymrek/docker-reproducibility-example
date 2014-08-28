@@ -11,8 +11,8 @@ library(ops)
 ####################################
 #assess technical reproducibility  #
 ####################################
-run1_gene <- read.table('gene_fpkm_table_run1.txt', sep='\t', header=T)
-run2_gene <- read.table('gene_fpkm_table_run2.txt', sep="\t", header=T)
+run1_gene <- read.table('/home/guest/data/gene_fpkm_table_run1.txt', sep='\t', header=T)
+run2_gene <- read.table('/home/guest/data/gene_fpkm_table_run2.txt', sep="\t", header=T)
 
 merge12_gene <- merge(run1_gene, run2_gene, by='tracking_id')[,c(5:50, 55:100)]
 
