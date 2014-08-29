@@ -16,10 +16,10 @@ tar -xzvf docker-example-data.tar.gz
 ```
 * Run the docker with the data files mounted
 ```
-docker run -p 49000:8787 -d -v $DATAPATH/docker-example-data/:/home/ruser/data mgymrek/docker-reproducibility-example
+docker run -p 49000:8787 -d -v $DATAPATH/docker-example-data/:/home/guest/data mgymrek/docker-reproducibility-example
 ```
 (You can replace 49000 with another open port if you want.) where ```$DATAPATH``` is the path to where you have downloaded ```docker-example-data```.
-* Navigate in your web browser to http://0.0.0.0:49000. This will open up rstudio. The username and password are both "ruser". You can open files in the ```scripts/``` directory and run them to reproduce figures S7B and S1 from Martin et al.
+* Navigate in your web browser to http://0.0.0.0:49000. This will open up rstudio. The username and password are both "guest". You can open files in the ```scripts/``` directory and run them to reproduce figures S7B and S1 from Martin et al.
 
 # Code
 Note: posted R code is a modified version of the code posted by the authors of Martin et al: [Transcriptome Sequencing from Diverse Human Populations Reveals Differentiated Regulatory Architecture]
